@@ -1,0 +1,128 @@
+/* Setting a general settings for the whole body */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    background-color: #fffffb;
+}
+
+/* Styling the header */
+header > h1{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* decorating social media links */
+header nav a{
+    color: #0e0e0e;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+header li{
+    list-style-type: none;
+    padding-right: 7px;
+}
+header menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section h2{
+    text-align: center;
+    margin-top: 7px;
+}
+
+/* Designing the hr element */
+hr{
+    height: 2px;
+    background-color: #0e0e0e;
+    margin-top: 0;
+}
+
+.experience_work_edu{
+    display: grid;
+    grid-template-areas:
+    'first_part second_part'
+    'third_part fourth_part';
+}
+
+.experience_work_edu span{
+    padding-right: 3px;
+}
+
+.experience_work_edu p{
+    margin-top:5px;
+    margin-bottom: 3px;
+    font-weight: 600;
+}
+
+.experience_work_edu p:nth-child(2), p:nth-child(4){
+    text-align: end;
+}
+
+.third_part{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* Styling the alignment */
+
+.experience_description{
+    margin-left: 5px;
+}
+
+.experience_description p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.experience_description span{
+    margin-right: 7px;
+    margin-left: 3px;
+}
+
+/* Designing a form */
+
+#contact_info_form form{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#contact_info_form input,
+#contact_info_form select,
+#contact_info_form textarea {
+    width: 30%;
+    padding: 5px 7px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fdfdf9;
+    border: 1px solid #cfc6a9;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Styling the button */
+.format_to_contact_me button {
+    background-color: #8b735b;
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 2px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Designing for phone */
+@media (max-width: 600px) {
+    header menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* designing that the text can be wrapped after the space is not available */
+    }
+}
