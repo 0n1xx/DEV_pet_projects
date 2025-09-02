@@ -1,0 +1,141 @@
+/* Simple reset courtesy of Josh Comeau - https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+    10. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+/* My css code */
+
+header{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* header is a selector */
+/* declaration is everything that is inside of {} */
+/* width is a property that targets the width */
+/* 50% is a value that takes 50% of the parent element */
+
+
+header nav{
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    height: 50px;
+}
+
+header nav a{
+    color: #fffffb;
+}
+
+#intro{
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background-color: #BADA55;
+}
+
+#expect{
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "h2 h2"
+      "section section";
+    margin-bottom: 30px;
+    border: 2px dashed;
+    border-radius: 15px;
+    padding-left: 7px;
+    padding-right: 7px;
+    text-decoration: none;
+}
+
+#expect h2{
+    text-align: center;
+}
+
+#ready, footer{
+    width: 50%;
+    margin: 0 auto;
+    background-color: #BADA55;
+    margin-bottom: 0;
+}
+
+
+
