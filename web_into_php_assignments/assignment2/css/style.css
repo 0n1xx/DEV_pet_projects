@@ -1,0 +1,225 @@
+/* Adding root colours that will be applied through the file */
+:root{
+    --base: #FAFAFA;
+    --text: #1C1A22;
+    --primary: #3F4A8A;
+    --secondary:#764FB5;
+    --accent: #1C5D99;
+    --base_header_footer: #E4EFF6;
+    --legend_colour: #0096D6;
+}
+
+/* Smooth animation of getting elements up */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section where I design common properties */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Lora", sans-serif; /* setting the font size to the body, so elements can inherit from it */
+    animation: fadeInUp 1.2s ease;
+}
+
+/* Targeting html and specifically font-size, so it will be more comfortable working with rem, em since now the default
+size of our text is 10px */
+html {
+    font-size: 62.5%; /* equivalent to 10px */
+}
+
+/* Section with setting the layout for my page */
+/* Setting common design elements for the header and the footer */
+header,
+footer{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 15rem;
+    width: 100%;
+    background-color: var(--base_header_footer);
+    align-items: center;
+}
+
+header div img,
+footer div img {
+    height: 100%;   /* instead of fixed 15rem */
+    max-height: 15rem;
+    object-fit: contain;
+}
+
+header > nav > ul,
+footer div:last-of-type{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Styling particular elements */
+/* Styling the header */
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Adding some decorations to a elements in the header */
+/* Primarily, in this document, I'm working on text and colour */
+header ul a{
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* When a user hovers, I want to add some interaction by changing the colour */
+header ul a:hover{
+    color: var(--accent);
+}
+
+main h1{
+    text-align: center;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+/* Styling the form */
+.form_order_page {
+    max-width: 60rem;
+    margin: 2.5rem auto;
+    padding: 2rem;
+    border: 0.3rem solid var(--accent);
+    border-radius: 1rem;
+}
+
+/* Designing each block of the form, so a potential user will see the difference between different logical elements
+such as contact info and etc
+ */
+form fieldset {
+    border: 0.15rem solid var(--primary);
+    border-radius: 0.8rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+form legend{
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--legend_colour);
+}
+
+form fieldset label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+/* Designing different forms */
+form input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.radio-option input[type="radio"] {
+    margin-right: 0.5rem;
+    width: auto;
+}
+
+/* Increasing the size of the textbox */
+#textbox{
+    min-height: 10rem;
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+select {
+    width: 100%;
+    padding: 1rem;
+    font-size: 2.5rem;
+    border: 1px solid var(--primary);
+    border-radius: 0.5rem;
+    color: var(--text);
+    box-sizing: border-box;
+}
+
+/* Customizing a submit button, so it will be attractive to our users */
+#submit_button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#submit_button  button {
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/* Designing the div which will tell the user if his order is placed */
+.check_connection{
+    font-weight: 600;
+    font-size: 2.5rem;
+    background-color: var(--primary);
+    text-align: center;
+}
+
+/* Success or error message design */
+.alert_success{
+    border: 0.15rem solid #0e0e0e;
+    background-color: #BADA55;
+    margin-bottom: 1rem;
+}
+
+.alert_failure{
+    border: 0.15rem solid #0e0e0e;
+    background-color: #e63946;
+    margin-bottom: 1rem;
+}
+
+.alert_success p,
+.alert_failure p{
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    color: #0e0e0e;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/* Styling paragraphs in the footer */
+/* Basically applying some padding customization: text and margin */
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer p {
+    font-weight: 300;
+    color: var(--primary);
+    font-size: 1.5rem;
+    text-align: center;
+}
