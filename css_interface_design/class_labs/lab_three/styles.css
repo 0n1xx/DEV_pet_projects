@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #f8fafc;
+    --text: #0f172a;
+    --muted: #475569;
+    --panel: #ffffff;
+    --border: #e2e8f0;
+    --accent: #2563eb;
+    --accent-600: #1d4ed8;
+    --gap: 1rem;
+}
+
+html,
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Header */
+.site-header {
+    border-bottom: 1px solid var(--border);
+    background: var(--panel);
+    /* Hint: this area should space the brand and nav apart and keep them aligned */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-link {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.top-nav {
+    /* Hint: try arranging links in a row with some spacing */
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-link {
+    color: var(--muted);
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--text);
+}
+
+/* Hero */
+.hero {
+    /* Hint: consider a layout that stacks elements and centers them */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero .lead {
+    color: var(--muted);
+    max-width: 60ch;
+    margin: 0.5rem auto 1rem;
+}
+
+.hero-actions {
+    /* Hint: place these buttons side by side with a little gap */
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    border: 1px solid var(--border);
+    background: #fff;
+    color: var(--text);
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background: var(--accent-600);
+    border-color: var(--accent-600);
+}
+
+.btn.small {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.9rem;
+}
+
+/* Album grid */
+.album {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+.cards {
+    /* Hint: think about letting these child cards wrap onto new lines */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    /* column layout for card content */
+    flex-direction: column;
+    justify-content: space-between;
+    /* Hint: flexible sizing here will control how many cards fit per row */
+    flex: 1 1 260px;
+    min-height: 250px;
+}
+
+.thumb {
+    background: #cbd5e1;
+    height: 180px;
+    /* placeholder height */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+}
+
+.card-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    /* Hint: what could you do so this section always sits at the bottom? */
+    order: 2;
+}
+
+.meta {
+    color: var(--muted);
+    margin-left: auto;
+}
+
+/* Footer */
+.site-footer {
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--muted);
+    padding: 2rem 1rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.back-to-top {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+
+/* Reflection
+
+1 – Which sections of the layout felt like a natural fit for Flexbox?
+In my opinion, it is definitely a header and a footer. I try to implement grid for the body part,
+so that every element on it has a structure. On the other side, if it is a shop page I would use
+flex because it will allow me to save time by almost avoiding using media queries. In this situation,
+I can apply flex-wrap and some basic customizations using media queries.
+
+2 – Which sections were workable with Flexbox, but felt a bit limited or could be improved?
+If the content is not repeated and quite unique, I would use grid here. For example, the welcome page because
+it is usually consists of different elements that should have their own position and that is the exact situation
+where grid can be quite handy. It allows you to structure every element on the page.
+*/
