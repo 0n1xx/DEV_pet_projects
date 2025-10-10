@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- In the head element, we add our metadata -->
+  <!-- Declare our character set -->
+  <meta charset="utf-8">
+  <!-- This measures the viewport of the device we are using -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This will describe our pages content, this should be different
+    on each page -->
+  <meta name="description" content="The is the third assignment">
+  <!-- This will tell the search engine to index the site or not -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- This is our title tag  -->
+  <title> This is the third assignment </title>
+  <!-- This is the element that connects css file to our html_css_js_introduction file -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Using a special google font -->
+  <!-- https://getbootstrap.com/docs/4.0/examples/carousel/ -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Link</a>
+      <a href="#">Disabled</a>
+    </nav>
+    <form>
+      <input type="text" placeholder="Search" aria-label="Search">
+      <button type="submit">Search</button>
+    </form>
+  </header>
+  <main>
+    <!-- Creating a section with the main content -->
+    <section>
+      <h1>Example headline.</h1>
+      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at
+        eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      <button type="button">Sign up today</button>
+    </section>
+    <!-- Creating a section where three circles are -->
+    <section class="main-content heading">
+      <div>
+        <div class="circle"> <!-- Using css, I'll create an imitation of circles -->
+        </div>
+        <div class="middle-content-text">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo
+            cursus magna.</p>
+          <p><a href="#" class="view_details">View details &raquo;</a></p>
+        </div>
+      </div>
+      <div>
+        <div class="circle">
+        </div>
+        <div class="middle-content-text">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a href="#" class="view_details">View details &raquo;</a></p>
+        </div>
+      </div>
+      <div>
+        <div class="circle">
+        </div>
+        <div class="middle-content-text">
+          <h2>Heading</h2>
+          <p id="long-text">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
+            felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+            massa justo sit amet risus.</p>
+          <p><a href="#" class="view_details">View details &raquo;</a></p>
+        </div>
+      </div>
+    </section>
+    <!-- Using hr to create a visible line between the content -->
+    <hr class="custom-seperator">
+    <!-- Creating a section with the main content where our images are -->
+    <section class="main-content">
+      <div class="big-content">
+        <div class="big-content-text">
+            <h2>First featurette heading. <span>It'll blow your mind.</span></h2>
+            <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="big-content-image">
+            <img src="images/generic_image.png" alt="Generic placeholder image">
+        </div>
+      </div>
+      <div class="big-content">
+        <div class="text-second-section">
+          <h2>Oh yeah, it's that good. <span>See for yourself.</span></h2>
+          <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
+            felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
+            tellus ac cursus commodo.</p>
+        </div>
+        <div class="photo-second-section big-content-image">
+          <img src="images/generic_image.png" alt="Generic placeholder image">
+        </div>
+      </div>
+      <div class="big-content">
+        <div class="big-content-text">
+          <h2>And lastly, this one. <span>Checkmate.</span></h2>
+          <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="big-content-image">
+          <img src="images/generic_image.png" alt="Generic placeholder image">
+        </div>
+      </div>
+    </section>
+  </main>
+  <hr class="custom-seperator">
+  <footer>
+    <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p><a href="#">Back to top</a></p>
+  </footer>
+</body>
+</html>
