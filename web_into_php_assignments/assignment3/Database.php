@@ -1,10 +1,10 @@
 <?php
 class Database{
     // Defining database credentials
-    private $host = "172.31.22.43";
-    private $username = "Vladislav200625361";
-    private $password = "NJ4EWrB_jU";
-    private $database = "Vladislav200625361";
+        private $host = "YOUR_HOST";
+    private $username = "YOUR_USERNAME";
+    private $password = "YOUR_PASSWORD";
+    private $database = "YOUR_DATABASE_NAME";
     public $connection = null;
     // public property to store any errors
     public $error = null;
