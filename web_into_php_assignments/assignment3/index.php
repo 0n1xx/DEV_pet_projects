@@ -2,7 +2,7 @@
     // define our page title and description
     $pageTitle = "View profiles";
     $pageDesc = "This page will allow the user to view profiles";
-    require_once("./inc/Database.php");
+    require_once("./inc/CrudValidate.php");
     // call on the read method
     $profiles = $db->read();
     // check for a read error

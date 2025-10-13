@@ -1,7 +1,7 @@
 <?php
     $pageTitle = "Create profile";
     $pageDesc = "This page will allow the user to create a profile";
-    require_once "./inc/Database.php";
+    require_once "./inc/CrudValidate.php";
     $success = null;
     // 1. check if the form was sumbitted
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
