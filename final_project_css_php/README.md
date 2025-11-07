@@ -1,10 +1,10 @@
-# Marketplace of iPods: 
+# Marketplace of iPods:
 
 ## Description:
 - The project is a dynamic website which has been built using PHP, MySQL, HTML and CSS.
 - It consists of two sides:
-  - Public view: the client can see what is on the website, can open a separated product card;
-  - Backend view (admin): allows admins to add new products, customize existing ones;
+    - Public view: the client can see what is on the website, can open a separated product card;
+    - Backend view (admin): allows admins to add new products, customize existing ones;
 
 ## Technologies:
 - Frontend: HTML, CSS
@@ -43,7 +43,7 @@
 
 ## Database Schema (Suggested)
 
-Table: `admins`
+Table: `admin_users`
 
 | Field | Type | Constraints | Description |
 |--------|------|-------------|--------------|
@@ -53,11 +53,11 @@ Table: `admins`
 | `password` | VARCHAR(255) | NOT NULL | Hashed password |
 
 
-Table: `products`
+Table: `products_description`
 
 | Field | Type | Constraints | Description |
 |--------|------|-------------|--------------|
-| `id` | INT | PRIMARY KEY, AUTO_INCREMENT | Unique product ID |
+| `product_id` | INT | PRIMARY KEY, AUTO_INCREMENT | Unique product ID |
 | `name` | VARCHAR(150) | NOT NULL | Product name |
 | `description` | TEXT | NULL | Product description |
 | `price` | DECIMAL(10,2) | NOT NULL | Product price |
