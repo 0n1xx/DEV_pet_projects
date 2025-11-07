@@ -13,27 +13,27 @@
 - Version Control: Git & GitHub
 
 ## Approximate Project Structure:
-```bash
+```
 /project
 │
 ├── /assets
 │   ├── /uploads
 │
-│──/css
-│  ├── style.css
+├── /css
+│   ├── style.css
 │
 ├── /includes
 │   ├── header.php
 │   ├── footer.php
 │   ├── database.php
-│   └── auth.php (I assume it should be a seperated file)
+│   └── auth.php (I assume it should be a separated file)
 │
 ├── /admin
 │   ├── crud.php
-│   ├── login.php (Don't know if login/logout should be in the seperated file)
+│   ├── login.php (Not sure if login/logout should be in a separated file)
 │   └── logout.php
 │
-├── index.php          
+├── index.php
 ├── about.php
 ├── shop.php
 ├── product.php
