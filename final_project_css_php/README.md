@@ -16,8 +16,7 @@
 ```
 /project
 │
-├── /assets
-│   ├── /uploads
+├── /uploads
 │
 ├── /css
 │   ├── style.css
