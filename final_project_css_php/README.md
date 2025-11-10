@@ -21,10 +21,14 @@
 ├── /css
 │   ├── style.css
 │
-├── /includes
+│
+│── /templates
 │   ├── header.php
 │   ├── footer.php
+│
+├── /includes
 │   ├── database.php
+│   ├── config.php
 │   └── auth.php (I assume it should be a separated file)
 │
 ├── /admin
