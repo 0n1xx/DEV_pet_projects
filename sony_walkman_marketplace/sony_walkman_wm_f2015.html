@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- In the head element, we add our metadata -->
+    <!-- Declare our character set -->
+    <meta charset="utf-8">
+    <!-- This measures the viewport of the device we are using -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This will describe our pages content, this should be different
+      on each page -->
+    <meta name="description" content="The is the about page">
+    <!-- This will tell the search engine to index the site or not -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- This is our title tag  -->
+    <title> This is a Sony Walkman WM-F2015 page </title>
+    <!-- This is the element that connects css file to our html file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Using a special google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--  link js files  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/custom-js.js" defer></script>
+</head>
+<body>
+    <!-- Creating a global header -->
+    <header id="header"></header>
+    <main>
+        <div id="sony_walkman_wm_f2015">
+            <h1> Sony Walkman WM-F2015 </h1>
+        </div>
+        <section id="product_section">
+            <div id="product_image">
+                <img src="photos/shop_page/sony_walkman_wm_f2015_transparent.png" alt="sony walkman wm-f2015 photo">
+            </div>
+            <!-- Creating a div about description of a product -->
+            <div id="product_text">
+                <p> Step into the late 1980s with the <strong>Sony Walkman WM-F2015</strong>, a robust and stylish cassette
+                    player designed for audiophiles and on-the-go listeners alike. This model blends Sony’s signature durability
+                    with enhanced features for an elevated analog music experience.</p>
+                <p> Featuring a sleek, compact design with ergonomic controls, the WM-F2015 delivers crystal-clear sound through
+                    its high-quality tape transport system. Its durable housing offers protection for daily use, while the belt
+                    clip and lightweight form factor make it perfect for portable listening.</p>
+                <p> Equipped with intuitive buttons for Play, Stop, Rewind, Fast-forward, and Pause, the WM-F2015 lets you enjoy
+                    your favorite tapes effortlessly. The classic 3.5mm headphone jack supports a wide variety of headphones,
+                    ensuring you get authentic, warm analog sound wherever you go.</p>
+                <p> Celebrate a pinnacle of personal audio history with the Sony Walkman WM-F2015 — combining classic style
+                    and reliable performance in one timeless device.</p>
+                <!-- Adding a list of key features -->
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Compact, ergonomic design with durable casing</li>
+                    <li>Smooth and reliable mechanical tape transport</li>
+                    <li>Easy-to-use Play, Stop, Rewind, Fast-forward, Pause controls</li>
+                    <li>Belt clip for convenient portability</li>
+                    <li>Compatible with standard 3.5mm headphones</li>
+                    <li>Warm, clear analog audio playback</li>
+                    <li>Runs on standard AA batteries for long-lasting use</li>
+                    <li>Perfect for collectors and vintage audio enthusiasts</li>
+                </ul>
+                <!-- Setting the input for the quantity of items -->
+                <input type="number" class="product-quantity" name="quantity" min="1"  value="1">
+                <!-- Setting the price for one item -->
+                <p class="product-price_wm_f2015">$99.99 CAD</p>
+                <button type="button" class="add-to-cart-btn">Add to Cart</button>
+                <p class="hidden success-message">Nice choice! It's now in your cart — ready when you are. 🦫!</p>
+            </div>
+        </section>
+    </main>
+    <!-- Creating a global footer -->
+    <footer id="footer"></footer>
+</body>
+</html>

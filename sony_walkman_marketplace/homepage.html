@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- In the head element, we add our metadata -->
+    <!-- Declare our character set -->
+    <meta charset="utf-8">
+    <!-- This measures the viewport of the device we are using -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This will describe our pages content, this should be different
+      on each page -->
+    <meta name="description" content="The is the home page">
+    <!-- This will tell the search engine to index the site or not -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- This is our title tag  -->
+    <title> This is a home page </title>
+    <!-- This is the element that connects css file to our html file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Using a special google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--  link js files  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/custom-js.js" defer></script>
+</head>
+<body>
+    <!-- Creating a global header -->
+    <header id="header"></header>
+    <main class="main_header">
+        <div id="home_page_greeting_block">
+            <h1> Here, you can buy future </h1>
+        </div>
+        <!-- Creating multiple sections with the info about my company
+        and photos of the products that are sold -->
+        <div id="home_page_first_intro">
+            <div>
+                <p>
+                    Experience music like never before — untethered, personal, and always with you wherever you go.
+                    Feel every beat and melody accompany your journey, creating moments that stay with you forever.
+                </p>
+                <p>
+                    It’s about changing how the world connects with sound, breaking down barriers and redefining what
+                    it means to listen. Music becomes a bridge to new emotions, memories, and endless possibilities.
+                </p>
+                <p>
+                    This is the moment music became truly yours — intimate, portable, and revolutionary.
+                    A transformation that put the power of sound directly in your hands, changing the way we experience every tune.
+                </p>
+            </div>
+            <div class="big_screen_photo">
+                <img src="./photos/home_page/history_museum_photo.jpg" alt="history of Sony">
+            </div>
+            <!-- Adding a div only visible for mobile devices with different photos -->
+            <div class="phone-only-image">
+                <img src="./photos/home_page/small_sony_walkman_picture.png" alt="sony walkman phone-only image 1">
+                <img src="./photos/home_page/small_sony_walkman_picture2.png" alt="sony walkman phone-only image 2">
+            </div>
+        </div>
+        <div id="home_page_second_intro">
+            <div>
+                <img src="photos/home_page/sony_background.jpg" alt="usage of a player">
+            </div>
+            <div>
+                <p>
+                    Step into a legacy that changed the way we listen — a timeless journey where every note tells a
+                    story and every moment echoes innovation.
+                </p>
+                <p>
+                    It’s an icon of design and culture — blending sleek aesthetics with
+                    unforgettable audio experiences that defined a generation.
+                </p>
+                <p>
+                    It’s a movement, a vibe, a companion. More than hardware,
+                    it’s the heartbeat of personal expression and the soundtrack of your life.
+                </p>
+            </div>
+        </div>
+        <!-- Using a blockquote to site the creator words -->
+        <section id="walkman_creator_words">
+            <div>
+                <h3>Words of the Creator — Akio Morita, 1979</h3>
+                <blockquote>
+                    “We wanted to create a new way for people to enjoy music anywhere, anytime — a personal soundtrack for life’s moments. The Walkman is not just a player; it’s freedom of sound in your pocket.”
+                </blockquote>
+                <p> Akio Morita, Sony Co-founder</p>
+            </div>
+            <div>
+                <img src="photos/home_page/usage.jpg" alt="usage of a player">
+            </div>
+        </section>
+    </main>
+    <!-- Creating a global footer -->
+    <footer id="footer"></footer>
+</body>
+</html>

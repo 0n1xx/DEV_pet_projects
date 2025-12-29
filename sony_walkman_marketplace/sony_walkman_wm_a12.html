@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- In the head element, we add our metadata -->
+    <!-- Declare our character set -->
+    <meta charset="utf-8">
+    <!-- This measures the viewport of the device we are using -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This will describe our pages content, this should be different
+      on each page -->
+    <meta name="description" content="The is the about page">
+    <!-- This will tell the search engine to index the site or not -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- This is our title tag  -->
+    <title> This is a Sony Walkman WM-A12 page </title>
+    <!-- This is the element that connects css file to our html file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Using a special google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--  link js files  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/custom-js.js" defer></script>
+</head>
+<body>
+    <!-- Creating a global header -->
+    <header id="header"></header>
+    <main>
+        <div id="sony_walkman_wm_a12">
+            <h1> Sony Walkman WM-A12 </h1>
+        </div>
+        <section id="product_section">
+            <div id="product_image">
+                <img src="photos/shop_page/sony_walkman_wm_a12_transparent.png" alt="sony walkman wm-a12 photo">
+            </div>
+            <!-- Creating a div about description of a product -->
+            <div id="product_text">
+                <p> Step back into the golden age of portable music with the <strong>Sony Walkman WM-A12</strong>,
+                    a classic cassette player known for its sleek design and reliable performance. Introduced in the
+                    late 1980s, the WM-A12 combines Sony’s engineering excellence with a compact, user-friendly form factor —
+                    making it the perfect companion for music lovers on the move.</p>
+                <p> Featuring robust mechanical controls and a smooth tape transport mechanism, the WM-A12 delivers clear,
+                    warm analog sound that brings your favorite tapes to life. Its durable plastic casing, available in timeless black
+                    or silver finishes, houses Sony’s trusted components ensuring long-lasting playback with minimal wear.</p>
+                <p> Whether you’re rediscovering your vintage tape collection or simply craving the authentic charm of analog audio,
+                    the WM-A12 offers an immersive and tactile listening experience. Its lightweight design and comfortable
+                    ergonomics make it easy to carry, while the classic headphone jack supports a wide range of earphones.
+                </p>
+                <p> Celebrate a timeless piece of audio history with the Sony Walkman WM-A12 — where
+                    nostalgia meets everyday practicality.</p>
+                <!-- Adding a list of key features -->
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Compact and lightweight design for portable use</li>
+                    <li>Reliable mechanical tape transport system</li>
+                    <li>Classic Play, Stop, Rewind, Fast-forward, and Pause controls</li>
+                    <li>Durable casing in sleek black or silver</li>
+                    <li>Standard 3.5mm headphone jack compatibility</li>
+                    <li>Clear and warm analog audio playback</li>
+                    <li>Long battery life with standard AA batteries</li>
+                    <li>Authentic vintage design ideal for collectors and audiophiles</li>
+                </ul>
+                <!-- Setting the input for the quantity of items -->
+                <input type="number" class="product-quantity" name="quantity" min="1"  value="1">
+                <!-- Setting the price for one item -->
+                <p class="product-price_wm_a12">$79.99 CAD</p>
+                <button type="button" class="add-to-cart-btn">Add to Cart</button>
+                <p class="hidden success-message">Nice choice! It's now in your cart — ready when you are. 🦫!</p>
+            </div>
+        </section>
+    </main>
+    <!-- Creating a global footer -->
+    <footer id="footer"></footer>
+</body>
+</html>

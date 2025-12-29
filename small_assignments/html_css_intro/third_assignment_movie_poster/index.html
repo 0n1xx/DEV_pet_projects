@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- In the head element, we add our metadata -->
+  <!-- Declare our character set -->
+  <meta charset="utf-8">
+  <!-- This measures the viewport of the device we are using -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This will describe our pages content, this should be different
+    on each page -->
+  <meta name="description" content="The page for a movie poster">
+  <!-- This will tell the search engine to index the site or not -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- This is our title tag  -->
+  <title> Movie Poster </title>
+  <!-- This is the element that connects css file to our html file -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Using a special google font -->
+  <!-- One for the lines of the title and the other one for production and writing credits-->
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- The header is not included since there is no point of using it here -->
+  <main>
+    <div id="electra_glide_in_blue"> <!-- Creates the seperated section for a movie poster. When I was validating,
+    it recommended me to change it to ti -->
+      <div id="electra_glide_in_blue_title"> <!-- Builds a section for an initial title -->
+        <div id="first_line_of_the_title">
+          <p>HE'S A GOOD COP</p>
+        </div>
+        <div id="second_line_of_the_title">
+          <p>ON A BIG BIKE</p>
+        </div>
+        <div id="third_line_of_the_title">
+          <p>ON A BAD ROAD</p>
+        </div>
+        <div id="image_background"> <!-- Adds an image here cause I want to relative position with it -->
+          <img src="./images/background_image.jpg" alt="background_image">
+        </div>
+      </div>
+      <div id="production_credits"> <!-- This is the section for production, story and other credits.
+      Again during the validation, there was a warning that I should change it to a div-->
+        <div id="production_part1">
+          <p>"A JAMES WILLIAM GUERCIO - RUPERT HITZIG Production</p>
+        </div>
+        <div id="production_part2">
+          <p>‘ELECTRA GLIDE IN BLUE’ starring ROBERT BLAKE - BILLY (GREEN) BUSH</p>
+        </div>
+        <div id="production_part3">
+          <p>Produced and Directed by JAMES WILLIAM GUERCIO · Screenplay by ROBERT BORIS</p>
+        </div>
+        <div id="credit_part">
+          <p>Story by ROBERT BORIS and RUPERT HITZIG · Music Composed by JAMES WILLIAM GUERCIO"</p>
+        </div>
+        <div id="credits_studio_part">
+          <p>United Artists</p>
+        </div>
+        <div id="credits_wrapper">
+          <!-- During the validation, there was a warning that I should change it to a div -->
+          <div id="credits_general"> <!-- Adds these three credits in one div because want to work with them as one element -->
+            <p>Original Motion Picture Soundtrack on United Artists</p>
+            <p>Records and Tapes</p>
+            <p>The hit single ‘Tell Me’ on Columbia Records"</p>
+          </div>
+          <div id="credits_phrase">
+            <p id="main_letter">T</p>
+            <div id="phrase_texts">
+              <p id="beginning_phrase">He’s</p>
+              <p id="ending_phrase">a Good Cop</p>
+            </div>
+          </div>
+        </div>
+        <div id="parental_guidance">
+          <p id="main_letter2">PG</p>
+          <p id="parental_guidance_text">Parental Guidance suggested</p>
+        </div>
+      </div>
+    </div> <!-- Create a seperated section for links.
+    During the validation, there was a warning that I should change it to a div -->
+    <div id="links">
+      <div id="youtube_link">
+        <a href="https://www.youtube.com/watch?v=_ql3l9C_qQ4">
+          <img src="./images/youtube_logo.jpg" alt="youtube_logo">
+        </a>
+      </div>
+      <div id="imdb_link">
+        <a href="https://www.imdb.com/video/vi3357780249/">
+          <img src="./images/imdb_logo.jpg" alt="imdb_logo">
+        </a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

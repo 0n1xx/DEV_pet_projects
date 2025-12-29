@@ -1,0 +1,245 @@
+/* Setting general settings for the whole web page */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+/* Adding some padding and creating a visible border for the whole poster */
+
+#electra_glide_in_blue{
+    border: 3px solid black;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 1500px;
+    box-sizing: border-box;
+    background-color: #fff;       
+}
+
+/* Working on the title part */
+/* Setting the part with image and main so-called title as a grid part */
+/* Specifically set 5 x 5 because I need to put divs in 2/2, 3/3, 4/4. By doing this
+all of them almost look like on the original picture */
+#electra_glide_in_blue_title {
+    display: grid;
+    grid-template-columns: 90px auto auto auto 90px;
+    grid-template-rows: repeat(5, auto);
+}
+
+#electra_glide_in_blue_title p{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+/* Using position relative, so that all titles div are above the div picture */
+/* Also, aligning text elements, so they look like on the photo */
+#first_line_of_the_title {
+    grid-column: 2;
+    grid-row: 2;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#second_line_of_the_title {
+    grid-column: 3;
+    grid-row: 3;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#third_line_of_the_title {
+    grid-column: 4;
+    grid-row: 4;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Writing -100px, my picture goes under the divs with paragraphs */
+#image_background {
+    grid-column: 1 / span 5;
+    grid-row: 4;
+    position: relative;
+    z-index: 1;
+    margin-top: -100px;
+}
+
+/* Setting some text customisation for the titles */
+#first_line_of_the_title, #second_line_of_the_title, #third_line_of_the_title {
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+/* Working with an image */
+#image_background  > div, img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Working with part of production */
+#production_credits {
+    display: grid;
+    grid-template-columns: 90px auto auto auto auto;
+    grid-template-rows: repeat(6, auto);
+    justify-content: center;
+    margin-top: -130px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Setting some text customisation for the credits */
+#production_part1, #production_part2, #production_part3, #credit_part {
+    font-family: 'Oswald', serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/* Setting the alignment of what is inside of divs */
+#production_part1, #production_part2, #production_part3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* Setting the position of divs */
+#production_part1 {
+    grid-column: 2 / 5; /* 2-4 columns */
+    grid-row: 1;
+}
+
+#production_part2 {
+    grid-column: 2 / 5;
+    grid-row: 2;
+}
+
+#production_part3 {
+    grid-column: 2 / 5;
+    grid-row: 3;
+}
+
+#credit_part{
+    grid-column: 1/5;
+    grid-row: 4;
+}
+
+/* Setting some text customisation to credits_studio_part div, also changing the font because it is different
+on the photo as well*/
+#credits_studio_part {
+    grid-column: 5;
+    grid-row: 4;
+    font-family: 'Oswald', serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+#credits_wrapper {
+    grid-column: 1 / 6;
+    grid-row: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+/* Style for credits_general */
+#credits_general {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1 1 auto;
+}
+
+/* On the photo, it is seen that this part, each text is surrounded by borders */
+#credits_general p {
+    margin: 0;
+    padding: 5px 10px;
+    border: 2px solid black;
+    font-family: 'Oswald', serif;
+    font-weight: 300;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+/* Style for credits_phrase */
+#credits_phrase {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Working with T part, to be honest,
+I can barely see what is on the picture, so I just inserted some text */
+#main_letter {
+    font-family: 'Oswald', serif;
+    font-weight: 700;
+    font-size: 90px; /* big T */
+    line-height: 1;
+    margin: 0;
+}
+
+#phrase_texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#beginning_phrase, #ending_phrase {
+    font-family: 'Oswald', serif;
+    font-weight: 300;
+    font-size: 22px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+#parental_guidance{
+    grid-column: 5;
+    grid-row: 6;
+}
+
+/* Working with Parental Guidance part */
+#main_letter2 {
+    font-family: 'Oswald', serif;
+    font-weight: 700;
+    font-size: 50px;   /* smaller than T */
+    line-height: 1;
+    margin: 0;
+    color: black;
+    border: 2px solid black;
+}
+
+/* Parental guidance text */
+#parental_guidance_text {
+    font-family: 'Oswald', serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.2;
+    border: 2px solid black;
+}
+
+/* Working on the link part */
+#links{
+    height: 200px;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#links div, img {
+    max-height: 100%;
+    max-width: 100%;
+}

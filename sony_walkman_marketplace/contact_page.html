@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- In the head element, we add our metadata -->
+    <!-- Declare our character set -->
+    <meta charset="utf-8">
+    <!-- This measures the viewport of the device we are using -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This will describe our pages content, this should be different
+      on each page -->
+    <meta name="description" content="The is the contact page">
+    <!-- This will tell the search engine to index the site or not -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- This is our title tag  -->
+    <title> This is a home page </title>
+    <!-- This is the element that connects css file to our html file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Using a special google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--  link js files  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/custom-js.js" defer></script>
+</head>
+<body>
+    <!-- Creating a global header -->
+    <header id="header"></header>
+    <main class="main_header">
+        <div id="welcome_contact_page">
+            <h1>How would you like to contact us</h1>
+        </div>
+        <section id="main_form">
+            <div id="contact_info">
+                <h3>Contact information:</h3>
+                    <div id="contact_info_form">
+                        <!-- Creating a form if a client wants to reach out my shop -->
+                        <form action="somefile.php" method="post" enctype="multipart/form-data">
+                        <div>
+                            <label for="first_name">First name: </label>
+                            <input type="text" placeholder="first name" id="first_name" name="first_name" required>
+                        </div>
+                        <div>
+                            <label for="last_name">Last name: </label>
+                            <input type="text" placeholder="last name" id="last_name" name="last_name" required>
+                        </div>
+                        <div>
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" required>
+                        </div>
+                        <div>
+                            <label for="writing_problem">Write your problem:</label><br>
+                            <textarea id="writing_problem" name="writing_problem" rows="5" cols="40" placeholder="Write your problem here..." required></textarea>
+                        </div>
+                        <div>
+                            <p id="charCount">Characters: 0</p>
+                        </div>
+                        </form>
+                    </div>
+            </div>
+            <!-- Creating a portion of website with a contact information
+            such as a phone number and links to social networks -->
+            <div id="urgent_question">
+                <h3>Any urgent issues with your order ?</h3>
+                <p>Give us a call: <span>+1 (705) 123-4567 </span></p>
+                <p>Or text us in our official social networks:</p>
+                <ul class="social-links">
+                    <li><a href="https://www.instagram.com/yourhandle" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/yourpage" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/yourhandle" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <!-- Creating a small form of how clients find the usage of this website -->
+            <div id="rate_our_service">
+                <h3>Do you like our service ?</h3>
+                <p>Please rate our service</p>
+                <form action="somefile.php" method="post" enctype="multipart/form-data">
+                    <label for="rating">Rating:</label>
+                    <select name="rating" id="rating" required>
+                        <option value="" disabled selected>Rate our service</option>
+                        <option value="excellent">Excellent</option>
+                        <option value="good">Good</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="bad">Bad</option>
+                        <option value="very_bad">Very Bad</option>
+                    </select>
+                    <div class="submit_button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div id="client_rates">
+            <h3>Client Reviews</h3>
+        </div>
+        <div id="contact_page_text">
+            <div id="item-1">
+                <p>
+                    “The Walkman was my first taste of real freedom. I still remember walking through the city with my headphones on, feeling like I had a soundtrack to my life. Thank you for keeping that feeling alive!”<br>
+                    <strong>— Marco T., Barrie</strong>
+                </p>
+            </div>
+            <div id="item-2">
+                <p>
+                    “I recently bought a retro Walkman and was blown away by the support team. They helped me track down tapes and even shared tips on maintenance. Incredible service and passion!”<br>
+                    <strong>— Lisa M., Toronto</strong>
+                </p>
+            </div>
+            <div id="item-3">
+                <p>
+                    “There’s something magical about hearing the cassette click and knowing the music is about to start. It brings me right back to the ‘80s. Your team has done an amazing job reviving this legend.”<br>
+                    <strong>— David R., London</strong>
+                </p>
+            </div>
+            <div id="item-4">
+                <p>
+                    “My teenage daughter discovered the Walkman through a vintage market — and now we listen together. Thanks for making something that bridges generations and still feels so personal.”<br>
+                    <strong>— Amina S., Montreal</strong>
+                </p>
+            </div>
+            <div id="item-5">
+                <p>
+                    “The Walkman I ordered brought back so many memories from my high school days. It arrived fast, beautifully packed, and works like a dream. So glad we have this in Canada!”<br>
+                    <strong>— Rachel B., Calgary</strong>
+                </p>
+            </div>
+            <div id="item-6">
+                <p>
+                    “I was honestly surprised by how great the sound quality is. It feels vintage but performs like new. Shoutout to the support team — super friendly and helpful.”<br>
+                    <strong>— Liam J., Ottawa</strong>
+                </p>
+            </div>
+            <div id="item-7">
+                <p>
+                    “You can tell this isn’t just a product — it’s a passion project. The Walkman looks incredible and works flawlessly. Love that it’s Canadian-based!”<br>
+                    <strong>— Sophie M., Halifax</strong>
+                </p>
+            </div>
+            <div id="item-8">
+                <p>
+                    “Fantastic experience from start to finish. I had a question about tapes and got a personal response within a day. You’ve earned a lifelong customer.”<br>
+                    <strong>— Daniel T., Winnipeg</strong>
+                </p>
+            </div>
+        </div>
+    </main>
+    <!-- Creating a global footer -->
+    <footer id="footer"></footer>
+</body>
+</html>

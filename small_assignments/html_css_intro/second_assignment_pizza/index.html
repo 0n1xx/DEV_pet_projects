@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- In the head element, we add our metadata -->
+  <!-- Declare our character set -->
+  <meta charset="utf-8">
+  <!-- This measures the viewport of the device we are using -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This will describe our pages content, this should be different
+    on each page -->
+  <meta name="description" content="The page for ordering pizza">
+  <!-- This will tell the search engine to index the site or not -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- This is our title tag  -->
+  <title> Ordering pizza </title>
+  <!-- This is the element that connects css file to our html file -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Using a special google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+      <!-- Creating a header with a logo and a small menu bar -->
+      <a href="index.html"> <img src="./logo_img/logo.png" alt="header logo"></a>
+      <nav>
+        <menu>
+          <li> <a href="#">Menu</a></li>
+          <li> <a href="#">Locations</a></li>
+          <li> <a href="#">Language</a></li>
+          <li> <a href="#">Language</a></li>
+        </menu>
+      </nav>
+  </header>
+  <main>
+    <!-- Creating a seperate container for the header -->
+    <div id="body_header">
+      <h1>Ordering process</h1>
+    </div>
+    <section id="pizza_size_contact_info">
+      <!-- Creating a section for order information and pizza style -->
+      <!-- Also all options are required since they're all essential when ordering pizza -->
+      <div id="pizza_size_details">
+        <h3>Pizza Style:</h3>
+        <form action="somefile.php" method="post" enctype="multipart/form-data">
+            <label for="pizza_size">Size: </label>
+            <select name="pizza_size" id="pizza_size" required>
+              <option value="" disabled selected>Choose the size</option>
+              <option value="small" >Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="extra_large">Extra Large</option>
+            </select>
+          <label for="pizza_sauce">Sauce: </label>
+          <select name="pizza_sauce" id="pizza_sauce" required>
+            <option value="" disabled selected>Choose the sauce</option>
+            <option value="tomato_sauce">Tomato Sauce</option>
+            <option value="white_sauce">White Sauce</option>
+            <option value="barbecue_sauce">Barbecue Sauce</option>
+            <option value="buffalo_sauce">Buffalo Sauce</option>
+            <option value="pesto_sauce">Pesto Sauce</option>
+          </select>
+          <label for="pizza_crust">Crust: </label>
+          <select name="pizza_crust" id="pizza_crust" required>
+            <option value="" disabled selected>Choose the crust</option>
+            <option value="thin_crust">Thin Crust</option>
+            <option value="traditional">Traditional</option>
+            <option value="deep_dish">Deep Dish</option>
+          </select>
+        </form>
+      </div>
+      <!-- Making a seperated divs for contact info main and additional parameters -->
+      <div id="pizza_contact_info">
+        <h3>Contact information:</h3>
+        <div class="contact_info">
+          <form action="somefile.php" method="post" enctype="multipart/form-data">
+            <label for="username">Username: </label>
+            <input type="text" placeholder="username" id="username" name="username" required>
+            <label for="address">Address: </label>
+            <input type="text" placeholder="address" id="address" name="address" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" required>
+          </form>
+        </div>
+        <div class="contact_info">
+          <form action="somefile.php" method="post" enctype="multipart/form-data">
+            <label>Pick One:</label>
+            <label for="delivery">Delivery</label>
+            <input type="radio" id="delivery" name="delivery_type" value="delivery" required>
+            <label for="pickup">Pick up</label>
+            <input type="radio" id="pickup" name="delivery_type" value="pickup">
+            <label for="textbox">Additional information:</label>
+            <input type="text" id="textbox" name="textbox" placeholder="Type here...">
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Creating an additional header which will act a seperate container -->
+    <div id="additional_ing_title">
+      <h3>Additional ingredients</h3>
+    </div>
+    <!-- Making a section with additional ingredients -->
+    <!-- Also I've created a seperate div for each type of ingredients-->
+    <section id="additional_ing">
+      <div>
+        <h4>Vegetables:</h4>
+        <form action="somefile.php" method="post" enctype="multipart/form-data">
+          <label><input type="checkbox" name="toppings" value="mushrooms"> Mushrooms</label>
+          <label><input type="checkbox" name="toppings" value="bell_peppers"> Bell peppers</label>
+          <label><input type="checkbox" name="toppings" value="onions"> Onions</label>
+          <label><input type="checkbox" name="toppings" value="olives"> Olives</label>
+          <label><input type="checkbox" name="toppings" value="tomatoes"> Tomatoes</label>
+          <label><input type="checkbox" name="toppings" value="spinach"> Spinach</label>
+          <label><input type="checkbox" name="toppings" value="jalapeños"> Jalapeños</label>
+          <label><input type="checkbox" name="toppings" value="garlic"> Garlic</label>
+          <label><input type="checkbox" name="toppings" value="artichokes"> Artichokes</label>
+        </form>
+      </div>
+      <div>
+        <h4>Meats:</h4>
+        <form action="somefile.php" method="post" enctype="multipart/form-data">
+          <label><input type="checkbox" name="toppings" value="pepperoni"> Pepperoni</label>
+          <label><input type="checkbox" name="toppings" value="sausage"> Sausage</label>
+          <label><input type="checkbox" name="toppings" value="ham"> Ham</label>
+          <label><input type="checkbox" name="toppings" value="bacon"> Bacon</label>
+          <label><input type="checkbox" name="toppings" value="chicken"> Chicken</label>
+          <label><input type="checkbox" name="toppings" value="ground_beef"> Ground beef</label>
+          <label><input type="checkbox" name="toppings" value="salami"> Salami</label>
+          <label><input type="checkbox" name="toppings" value="prosciutto"> Prosciutto</label>
+        </form>
+      </div>
+      <div>
+        <h4>Cheeses:</h4>
+        <form action="somefile.php" method="post" enctype="multipart/form-data">
+          <label><input type="checkbox" name="toppings" value="mozzarella"> Mozzarella</label>
+          <label><input type="checkbox" name="toppings" value="parmesan"> Parmesan</label>
+          <label><input type="checkbox" name="toppings" value="cheddar"> Cheddar</label>
+          <label><input type="checkbox" name="toppings" value="goat_cheese"> Goat cheese</label>
+          <label><input type="checkbox" name="toppings" value="feta"> Feta</label>
+          <label><input type="checkbox" name="toppings" value="ricotta"> Ricotta</label>
+          <label><input type="checkbox" name="toppings" value="blue_cheese"> Blue cheese</label>
+        </form>
+      </div>
+      <div>
+        <h4>Others:</h4>
+        <form action="somefile.php" method="post" enctype="multipart/form-data">
+          <label><input type="checkbox" name="toppings" value="pineapple"> Pineapple</label>
+          <label><input type="checkbox" name="toppings" value="basil"> Fresh basil</label>
+          <label><input type="checkbox" name="toppings" value="oregano"> Oregano</label>
+          <label><input type="checkbox" name="toppings" value="anchovies"> Anchovies</label>
+          <label><input type="checkbox" name="toppings" value="sun_dried_tomatoes"> Sun-dried tomatoes</label>
+          <label><input type="checkbox" name="toppings" value="pesto_drizzle"> Pesto drizzle</label>
+          <label><input type="checkbox" name="toppings" value="red_pepper_flakes"> Red pepper flakes</label>
+        </form>
+      </div>
+    </section>
+    <section id="submit">
+      <input type="submit" value="Submit">
+    </section>
+  </main>
+  <footer>
+    <!-- Making a footer with some generic information regarding rights of this imaginary company -->
+    <p>Contact us: <a href="beaver_pizza@gmail.com">beaver_pizza@gmail.com</a> | +1 (705) 123-4567</p>
+    <p>123 Anne St, Barrie, Canada</p>
+    <p class="footer-copy">© 2025 Beaver Pizza. All rights reserved.</p>
+  </footer>
+</body>
+</html>

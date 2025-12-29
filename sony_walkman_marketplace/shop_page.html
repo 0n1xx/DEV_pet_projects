@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- In the head element, we add our metadata -->
+  <!-- Declare our character set -->
+  <meta charset="utf-8">
+  <!-- This measures the viewport of the device we are using -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- This will describe our pages content, this should be different
+    on each page -->
+  <meta name="description" content="The is the about page">
+  <!-- This will tell the search engine to index the site or not -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- This is our title tag  -->
+  <title> This is a shop page </title>
+  <!-- This is the element that connects css file to our html file -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Using a special google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!--  link js files  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/custom-js.js" defer></script>
+</head>
+<body>
+  <!-- Creating a global header -->
+  <header id="header"></header>
+  <main class="main_header">
+    <div id="home_page_greeting_block">
+      <h1> Our catalog </h1>
+    </div>
+    <section id="shop_page">
+      <!-- Creating a div divs for sony_walkman_wm_2011 -->
+      <div id="sony_walkman_wm_2011">
+        <h3>Sony Walkman WM-2011</h3>
+        <a href="sony_walkman_wm_2011.html"><img src="photos/shop_page/sony_walkman_wm_2011_transparent.png" alt="sony walkman wm-2011 photo"></a>
+        <p>Experience the charm of retro audio with the Sony Walkman WM-2011, a compact and stylish cassette player
+            from the late '80s.</p>
+        <!-- Setting the price -->
+        <p class="product-price">$59.99 CAD</p>
+        <!-- Creating two clickable elements to either add to the card or read more about the project -->
+        <div class="product-buttons">
+          <button type="button" class="add-to-cart-btn">Add to Cart</button>
+          <a href="sony_walkman_wm_2011.html" class="read-more-btn">Read more</a>
+        </div>
+      </div>
+      <!-- Creating a div divs for sony_walkman_wm_a12 -->
+      <div id="sony_walkman_wm_a12">
+        <h3>Sony Walkman WM-a12</h3>
+        <a href="sony_walkman_wm_a12.html"><img src="photos/shop_page/sony_walkman_wm_a12_transparent.png" alt="sony walkman wm-a12 photo"></a>
+        <p>
+          Step back into the golden era of portable audio with the Sony Walkman WM-A12, a beautifully engineered
+          cassette player introduced around 1986.
+        </p>
+        <!-- Setting the price -->
+        <p class="product-price">$79.99 CAD</p>
+        <!-- Creating two clickable elements to either add to the card or read more about the project -->
+        <div class="product-buttons">
+          <button type="button" class="add-to-cart-btn">Add to Cart</button>
+          <a href="sony_walkman_wm_a12.html" class="read-more-btn">Read more</a>
+        </div>
+      </div>
+      <!-- Creating a div divs for sony_walkman_wm_f2015 -->
+      <div id="sony_walkman_wm_f2015">
+        <h3>Sony Walkman WM-f2015</h3>
+        <a href="sony_walkman_wm_f2015.html"><img src="photos/shop_page/sony_walkman_wm_f2015_transparent.png" alt="sony walkman wm-f2015 photo"></a>
+        <p>
+          The Sony Walkman WM-F2015 is a vintage portable cassette player with a built-in AM/FM radio,
+          offering classic analog sound and radio tuning on the go.
+        </p>
+        <!-- Setting the price -->
+        <p class="product-price">$99.99 CAD</p>
+        <!-- Creating two clickable elements to either add to the card or read more about the project -->
+        <div class="product-buttons">
+          <button type="button" class="add-to-cart-btn">Add to Cart</button>
+          <a href="sony_walkman_wm_f2015.html" class="read-more-btn">Read more</a>
+        </div>
+      </div>
+    </section>
+    <section id="form_section">
+      <h3>Find your shop</h3>
+      <p><input id="myInput" type="text" placeholder="Search ..."></p>
+      <table>
+        <thead>
+        <tr>
+          <th>Name of the Shop</th>
+          <th>Location</th>
+          <th>Hours of Operation</th>
+        </tr>
+        </thead>
+        <tbody id="myTable">
+        <tr><td>Walkman Central</td><td>123 Queen St W, Toronto, ON M5H 2M9</td><td>Mon–Fri: 10am–6pm</td></tr>
+        <tr><td>Analog Revival</td><td>456 Bloor St W, Toronto, ON M5S 1X8</td><td>Tue–Sat: 11am–7pm</td></tr>
+        <tr><td>Urban Mixtape</td><td>88 Spadina Ave, Toronto, ON M5V 2J4</td><td>Mon–Sat: 12pm–8pm</td></tr>
+        <tr><td>Loop & Track</td><td>25 Peel Centre Dr, Brampton, ON L6T 3R5</td><td>Tue–Sun: 10am–9pm</td></tr>
+        <tr><td>Magnetic Beats</td><td>100 City Centre Dr, Mississauga, ON L5B 2C9</td><td>Sat–Thu: 11am–8pm</td></tr>
+        <tr><td>RetroSound Hub</td><td>1500 Rue Sainte-Catherine O, Montreal, QC H3G 1S8</td><td>Tue–Sat: 11am–7pm</td></tr>
+        <tr><td>Rewind Records</td><td>5400 Jean-Talon St E, Montreal, QC H1S 1K3</td><td>Wed–Sun: 10am–6pm</td></tr>
+        <tr><td>Cassette Culture</td><td>5000 Hwy 7, Markham, ON L3R 4M9</td><td>Mon–Sat: 10am–5pm</td></tr>
+        <tr><td>Classic Tunes</td><td>321 Elgin St, Ottawa, ON K2P 1M5</td><td>Mon–Fri: 10am–5pm</td></tr>
+        <tr><td>Mixtape Market</td><td>10125 107 St NW, Edmonton, AB T5J 3N4</td><td>Mon–Fri: 9am–6pm</td></tr>
+        <tr><td>Walkman West</td><td>501 Kingsway, Vancouver, BC V5T 3J1</td><td>Tue–Sat: 10am–6pm</td></tr>
+        <tr><td>Vintage Vibes</td><td>810 Granville St, Vancouver, BC V6Z 1K3</td><td>Mon–Sun: 9am–9pm</td></tr>
+        <tr><td>Reel Revival</td><td>2271 Harvey Ave, Kelowna, BC V1Y 6H2</td><td>Wed–Sun: 11am–7pm</td></tr>
+        <tr><td>Sound Sanctuary</td><td>780 Fort St, Victoria, BC V8W 1H2</td><td>Tue–Sat: 10am–6pm</td></tr>
+        <tr><td>Time Capsule Audio</td><td>500 Portage Ave, Winnipeg, MB R3C 3X1</td><td>Tue–Sat: 10am–6pm</td></tr>
+        <tr><td>HiFi Rewind</td><td>3100 Howard Ave, Windsor, ON N8X 3Y8</td><td>Mon–Fri: 9am–5pm</td></tr>
+        <tr><td>Tape Deck Lounge</td><td>230 8 St E, Saskatoon, SK S7H 0R5</td><td>Tue–Sat: 12pm–9pm</td></tr>
+        <tr><td>Old School Sound</td><td>1875 Hollis St, Halifax, NS B3J 1W5</td><td>Mon–Sat: 11am–7pm</td></tr>
+        <tr><td>Portable Sound Co.</td><td>44 Côte du Palais, Quebec City, QC G1R 4H8</td><td>Tue–Sat: 10am–6pm</td></tr>
+        <tr><td>Waveform Audio</td><td>920 St-Joseph Blvd, Gatineau, QC J8Z 1S9</td><td>Wed–Sun: 11am–6pm</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <!-- Creating a global footer -->
+  <footer id="footer"></footer>
+</body>
+</html>
