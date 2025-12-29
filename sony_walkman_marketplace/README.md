@@ -1,10 +1,30 @@
-# 🎧 Sony Walkman Marketplace
+# Sony Walkman Marketplace
 
-A static website showcasing vintage Sony Walkman models with product pages, historical context, and shop locator functionality.
-Built with HTML5, CSS3, and JavaScript (jQuery + custom).
+A fully responsive **static website** showcasing a curated collection of vintage Sony Walkman models. This project demonstrates clean, semantic HTML structure, modern CSS layout techniques, and client-side interactivity using vanilla JavaScript and jQuery.
 
-### 📂 Project Structure
+Designed as a realistic e-commerce storefront with a focus on user experience, historical storytelling, and visual appeal — perfect for retro audio enthusiasts.
 
+### Key Features
+- **Responsive Design**: Mobile-first layout that adapts seamlessly across desktop, tablet, and mobile devices using Flexbox, Grid, and media queries.
+- **Product Catalog**: Dedicated pages for multiple Walkman models with high-quality images, detailed specifications, pricing, and historical context.
+- **Interactive Elements**:
+  - Functional "Add to Cart" with confirmation feedback
+  - Quantity selector
+  - Store locator search functionality
+  - Smooth navigation and DOM updates via JavaScript/jQuery
+- **Rich Content Pages**:
+  - Engaging homepage introducing brand philosophy
+  - Comprehensive "About" page with a timeline of Walkman evolution (1979–present)
+  - Contact page with structured form and customer review section
+- **Performance & Accessibility**:
+  - Semantic HTML5 markup
+  - Optimized image organization
+  - Clean, maintainable CSS architecture
+  - Modern typography using Google Fonts (Poppins)
+
+This project served as an important stepping stone in my development journey — building strong frontend fundamentals before advancing to dynamic, database-driven applications (like my iPod Marketplace project).
+
+### Project Structure
 ```bash
 sony_walkman_marketplace/
 ├── css/
@@ -28,43 +48,6 @@ sony_walkman_marketplace/
 └── sony_walkman_wm_f2015.html    # Detailed product page (WM-F2015)
 ```
 
-### 🌐 Pages Overview
-
-#### 🏠 Homepage (homepage.html):
-- Introduction to the shop’s mission & philosophy. 
-- Archival references and Walkman visuals.
-
-#### 📖 About Page (about_page.html):
-- A timeline of the Walkman’s history: 1979 → 2025. 
-- Showcases Walkman’s cultural and technological evolution.
-
-#### 🛒 Shop Page (shop_page.html):
-- Catalog of Walkman models:
-  - Sony Walkman WM-2011 → [$59.99 CAD]
-  - Sony Walkman WM-A12 → [$79.99 CAD]
-  - Sony Walkman WM-F2015 → [$99.99 CAD]
-- Each product links to a dedicated product page with images, descriptions, and key features. 
-- Includes a store locator search with major Canadian shop locations.
-
-#### ✉️ Contact Page (contact_page.html):
-- Customer inquiry form (name, email, phone, message). 
-- Urgent support info and social media links. 
-- Ratings system for service quality. 
-- Authentic Canadian customer reviews.
-
-#### 🎶 Product Pages:
-- Each Walkman model has its own dedicated product detail page:
-  - [sony_walkman_wm_2011.html](sony_walkman_wm_2011.html)
-  - [sony_walkman_wm_a12.html](sony_walkman_wm_a12.html])
-  - [sony_walkman_wm_f2015.html](sony_walkman_wm_f2015.html)
-
-- Includes:
-  - Product images 
-  - Historical context 
-  - Key features list 
-  - Price & quantity selector 
-  - Add-to-cart button with confirmation message
-
 ### 🛠️ Technologies Used:
 - HTML5 – Semantic, responsive markup 
 - CSS3 – Custom styling via style.css 
@@ -72,17 +55,47 @@ sony_walkman_marketplace/
 - jQuery – Simplified DOM manipulation 
 - Google Fonts (Poppins) – Modern typography
 
-### 🚀 Getting Started:
-1. Clone this repository:
-   ```bash
-    git clone https://github.com/your-username/sony_walkman_marketplace.git
-    cd sony_walkman_marketplace
-    ```
-2. Open any .html file in your browser (start with homepage.html).
-3. No build process is required — it’s a static site.
 
-### 📌 Future Improvements:
-- Add a cart page with checkout simulation.
-- Use localStorage for cart persistence. 
-- Improve mobile responsiveness. 
-- Optimize images for faster loading.
+### Technologies Used
+- **HTML5** – Semantic, accessible structure
+- **CSS3** – Custom responsive styling (Flexbox, Grid, custom components)
+- **JavaScript** – Vanilla JS for core interactivity
+- **jQuery** – Enhanced DOM manipulation and event handling
+- **Google Fonts** – Poppins for clean, modern typography
+
+### How to Run Locally
+This is a pure static site — no server or build tools required.
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/0n1xx/DEV_pet_projects.git
+   ```
+2. Navigate to the project folder:
+  ```bash
+  cd DEV_pet_projects/sony_walkman_marketplace
+  ```
+
+### Future Enhancements
+Here are some planned improvements to take this project further and align it with modern web standards:
+
+- **Persistent Shopping Cart**  
+  Implement cart functionality using `localStorage` to maintain items across page reloads and sessions.
+
+- **Dedicated Cart & Checkout Page**  
+  Create a summary page displaying selected items, quantities, subtotal, and a simulated checkout flow.
+
+- **Performance Optimizations**  
+  Add lazy loading for images and optimize file sizes to improve page load times, especially on mobile.
+
+- **Accessibility Improvements**  
+  Enhance keyboard navigation, add appropriate ARIA labels and roles, and ensure better screen reader support.
+
+- **Dynamic Backend Integration**  
+  Convert the static site into a full-stack application by adding PHP/MySQL for real product management, user accounts, and server-side cart handling (building on patterns from my iPod Marketplace project).
+
+These enhancements reflect my ongoing commitment to improving user experience, performance, and accessibility while progressing toward more complex full-stack solutions.
+
+Thank you for reviewing my work!
+
+— Vlad Sakharov  
+Aspiring Full-Stack Web Developer
