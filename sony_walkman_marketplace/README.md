@@ -71,9 +71,9 @@ This is a pure static site — no server or build tools required.
    git clone https://github.com/0n1xx/DEV_pet_projects.git
    ```
 2. Navigate to the project folder:
-  ```bash
-  cd DEV_pet_projects/sony_walkman_marketplace
-  ```
+   ```bash
+   cd DEV_pet_projects/sony_walkman_marketplace
+   ```
 
 ### Future Enhancements
 Here are some planned improvements to take this project further and align it with modern web standards:
